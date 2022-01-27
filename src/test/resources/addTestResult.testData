@@ -1,0 +1,5 @@
+#Пользователь в TestRail | его пароль | json для добавления результата | ожидаемый код ответа API | ожидаемое тело ответа
+userNameWithCorrectPermission | herPassword | {"comment":"Test Comment","version":"1555","elapsed":"1m 45s","defects":"SUT-500, SUT-1","test_id":52511,"status_id":1,"assignedto_id":1} | 200 | {"id":13199,"test_id":52511,"status_id":1,"created_by":8,"created_on":1444728852,"assignedto_id":1,"comment":"Test Comment","version":"1555","elapsed":"1m 45s","defects":"SUT-500, SUT-1","custom_step_results":null}
+userNameWithCorrectPermission | herPassword | {"comment":"Test Comment","version":"1555","elapsed":"1m 45s","defects":"SUT-500, SUT-1","test_id":0,"status_id":1,"assignedto_id":1} | 400 | null}
+userNameWOAccessToProject | herPassword | {"comment":"Test Comment","version":"1555","elapsed":"1m 45s","defects":"SUT-500, SUT-1","test_id":61318,"status_id":1,"assignedto_id":1} | 403 | null}
+userNameWOAddResultPermission | herPassword | {"comment":"Test Comment","version":"1555","elapsed":"1m 45s","defects":"SUT-500, SUT-1","test_id":61318,"status_id":1,"assignedto_id":1} | 403 | null}

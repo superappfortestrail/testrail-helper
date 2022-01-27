@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Qiwi TestRail API v2 Tests" time-out="120000">
+    <test name="Integration" preserve-order="true">
+        <classes>
+            <class name="ru.qiwi.automation.testrail.api.v2.AddResultTests"/>
+            <class name="ru.qiwi.automation.testrail.api.v2.AddResultForCaseTests"/>
+        </classes>
+    </test>
+</suite>
